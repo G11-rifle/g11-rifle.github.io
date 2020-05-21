@@ -7,33 +7,108 @@
 
 <body>
 
-<audio id="music" src="2.mp3" loop autoplay></audio>
+	<audio id="music1" src="cat.mp3" ></audio>
+	<audio id="music2" src="cuckoo.mp3" ></audio>
+	<audio id="music3" src="dog.mp3" ></audio>
+	<audio id="music4" src="okashi.mp3" ></audio>
+	<audio id="music5" src="tori.mp3" ></audio>
+	<audio id="music6" src="Windy swish.mp3" ></audio>
+	<audio id="music7" src="guitar.mp3" ></audio>
 
 <figure>
-<input type="button" value="曹彦" onclick="play()" />
-<input type="button" value="高橋英太郎" onclick="play()" />
-
-	
-<img src="2.png" onClick="play()" alt="user">
+	<p><input type="button" value="もう一回再生の時のみこれを押してください！！！" onclick="play()" /></p>
+	<input type="button" value="曹　彦" onclick="play();alert('出席完了しました。')" />
+	<input type="button" value="高橋　英太郎" onclick="play();alert('出席完了しました。') "/>
+	<input type="button" value="佐藤　志哉" onclick="play();alert('出席完了しました。')" />
+	<input type="button" value="小川　暖斗" onclick="play();alert('出席完了しました。')" />
+	<input type="button" value="明角　達哉" onclick="play();alert('出席完了しました。')" />
+	<input type="button" value="石川　裕宗" onclick="play();alert('出席完了しました。')" />																   
+	<input type="button" value="齋藤　浩貴" onclick="play();alert('出席完了しました。')" />											
+	<input type="button" value="白井　陽大" onclick="play();alert('出席完了しました。')" />
+	<input type="button" value="羽生田　浩貴" onclick="play();alert('出席完了しました。')" />
+	<input type="button" value="神田　晃" onclick="play();alert('出席完了しました。')" />																	   
+	<input type="button" value="裏巽　晴菜" onclick="play();alert('出席完了しました。')" />
+	<input type="button" value="菊池　琢巳" onclick="play();alert('出席完了しました。')" />
+	<input type="button" value="鈴木　太智" onclick="play();alert('出席完了しました。')" />
+	<input type="button" value="松本　宝" onclick="play();alert('出席完了しました。')" />																	
 </figure>
 
 
 
 	<script>
+
 window.onload = function(){ 
-     var audio = document.getElementById('music');
+     var audio = document.getElementById('music1');
          audio.pause();//打开页面时无音乐
 }
 function play() {
-	
-    var audio = document.getElementById('music');
-    if (audio.paused) {
-        audio.play(); 
-    }else{
-        audio.pause();
-        audio.currentTime = 0;//音乐从头播放
+	var myDate = new Date();
+	var xinqi= myDate.getDay();
+	if(myDate.getDay() == 1){
+		var audio = document.getElementById('music1');
+    	if (audio.paused) {
+        	audio.play(); 
+    	}else{
+        	audio.pause();
+        	audio.currentTime = 0;//音乐从头播放
+		}
+    }
+	else if(myDate.getDay() == 2){
+		var audio = document.getElementById('music2');
+    	if (audio.paused) {
+        	audio.play(); 
+    	}else{
+        	audio.pause();
+        	audio.currentTime = 0;//音乐从头播放
+		}
+    }
+	else if(myDate.getDay() == 3){
+		var audio = document.getElementById('music3');
+    	if (audio.paused) {
+        	audio.play(); 
+    	}else{
+        	audio.pause();
+        	audio.currentTime = 0;//音乐从头播放
+		}
+    }
+	else if(myDate.getDay() == 4){
+		var audio = document.getElementById('music4');
+    	if (audio.paused) {
+        	audio.play(); 
+    	}else{
+        	audio.pause();
+        	audio.currentTime = 0;//音乐从头播放
+		}
+    }
+	else if(myDate.getDay() == 5){
+		var audio = document.getElementById('music5');
+    	if (audio.paused) {
+        	audio.play(); 
+    	}else{
+        	audio.pause();
+        	audio.currentTime = 0;//音乐从头播放
+		}
+    }
+	else if(myDate.getDay() == 6){
+		var audio = document.getElementById('music6');
+    	if (audio.paused) {
+        	audio.play(); 
+    	}else{
+        	audio.pause();
+        	audio.currentTime = 0;//音乐从头播放
+		}
+    }
+	else if(myDate.getDay() == 0){
+		var audio = document.getElementById('music7');
+    	if (audio.paused) {
+        	audio.play(); 
+    	}else{
+        	audio.pause();
+        	audio.currentTime = 0;//音乐从头播放
+		}
     }
 }
+
 </script>
 
 </body>
